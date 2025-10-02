@@ -1,2 +1,2 @@
-# Passive-Sampling-of-Environmental-DNA-for-Microbial-Community-Profiling
+# Passive Sampling of Environmental DNA
 Shell and R scripts
