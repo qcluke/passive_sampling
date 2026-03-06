@@ -3098,15 +3098,6 @@ field_16s_mantel_ps <- batch_mantel(field_16s_bray_ps, env_factor)
 field_18s_mantel_af <- batch_mantel(field_18s_bray_af, env_factor)
 field_18s_mantel_ps <- batch_mantel(field_18s_bray_ps, env_factor)
 
-mantal_combined = rbind(field_16s_mantel_af, field_18s_mantel_af, field_16s_mantel_ps, field_18s_mantel_ps)
-mantal_combined$group = c(rep("pro", 6), rep("eu", 6), rep("pro", 6), rep("eu", 6))
-mantal_combined_plot = mantal_combined %>% 
-  mutate(rd = cut(Mantel_r, breaks = c(-Inf, 0.6, Inf),
-                  labels = c("< 0.6", "≥ 0.6")),
-         pd = cut(p_value, breaks = c(-Inf, 0.05, Inf),
-                  labels = c("< 0.05","≥ 0.05")))
-mantal_combined_plot = mantal_combined_plot[, c("group", "Variable", "Mantel_r", "p_value", "rd", "pd")]
-
 
 ## plot
 library(linkET)
