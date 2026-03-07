@@ -4,4 +4,4 @@ Shell and R scripts for
 
 **Developing and Evaluating Aquatic Passive Sampling of Environmental DNA for Microbial Community Profiling**  
 
-Molecular Ecology Resources https://doi.org/10.1111/1755-0998.70121
+Published in Molecular Ecology Resources https://doi.org/10.1111/1755-0998.70121
